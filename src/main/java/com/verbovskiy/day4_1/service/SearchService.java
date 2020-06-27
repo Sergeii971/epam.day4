@@ -8,6 +8,7 @@ import com.verbovskiy.day4_1.validator.SearchValidator;
 
 public class SearchService {
     private final int NUMBER_OF_DIGITS_IN_MATH = 10;
+
     public int findIndexMinElement(IntArray array, int begin, int end) throws TaskException {
         SearchValidator searchValidator = new SearchValidator();
         ArrayValidator arrayValidator = new ArrayValidator();

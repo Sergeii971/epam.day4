@@ -1,4 +1,4 @@
-package com.verbovskiy.day4_2.entity;
+package com.verbovskiy.day4_2.service;
 
 import com.verbovskiy.day4_2.exception.TaskException;
 

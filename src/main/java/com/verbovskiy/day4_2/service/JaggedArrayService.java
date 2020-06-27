@@ -1,6 +1,5 @@
 package com.verbovskiy.day4_2.service;
 
-import com.verbovskiy.day4_2.entity.SortingMethod;
 import com.verbovskiy.day4_2.exception.TaskException;
 import com.verbovskiy.day4_2.validator.IndexValidator;
 
