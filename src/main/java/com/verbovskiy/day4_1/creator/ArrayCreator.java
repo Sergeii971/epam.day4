@@ -7,8 +7,8 @@ import com.verbovskiy.day4_1.reader.ConsoleReader;
 import com.verbovskiy.day4_1.reader.CustomFileReader;
 
 public class ArrayCreator {
-    private final int MAX_RANDOM = 1000;
-    private final int MIN_RANDOM = 0;
+    private final int MIN_VALUE = 0;
+    private final int MAX_VALUE = 100;
     
     public IntArray createAndFillArrayRandom(int arrayLength) throws TaskException {
         if (arrayLength < 1) {
@@ -17,7 +17,7 @@ public class ArrayCreator {
             Integer[] elements = new Integer[arrayLength];
 
             for(int i = 0; i < elements.length; ++i) {
-                elements[i] = MIN_RANDOM + (int)(Math.random() * MAX_RANDOM);
+                elements[i] = MIN_VALUE + (int)(Math.random() * MAX_VALUE);
             }
 
             return new IntArray(elements);
