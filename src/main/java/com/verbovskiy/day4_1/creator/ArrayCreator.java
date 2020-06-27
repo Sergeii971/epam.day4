@@ -41,6 +41,7 @@ public class ArrayCreator {
         ArrayParser arrayParser = new ArrayParser();
         String[] data = customFileReader.readFromFile(file);
         Integer[] elements = arrayParser.parseToIntArray(data);
+
         return new IntArray(elements);
     }
 }

@@ -8,7 +8,7 @@ public class NumberValidator {
         boolean result = true;
 
         number = Math.abs(number);
-        if ((number >= MIN_THREE_DIGIT_NUMBER) && (number <= MAX_THREE_DIGIT_NUMBER)) {
+        if ((number < MIN_THREE_DIGIT_NUMBER) || (number > MAX_THREE_DIGIT_NUMBER)) {
             result = false;
         }
         return result;

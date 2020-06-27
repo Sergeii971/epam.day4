@@ -12,7 +12,7 @@ public class SearchService {
         SearchValidator searchValidator = new SearchValidator();
         ArrayValidator arrayValidator = new ArrayValidator();
 
-        if ((array == null) || (searchValidator.validateSearchData(array, begin, end))
+        if ((array == null) || (!searchValidator.validateSearchData(array, begin, end))
                 || (!arrayValidator.validateArrayElementNotNull(array))) {
             throw new TaskException("incorrect data");
         }
@@ -32,7 +32,7 @@ public class SearchService {
         SearchValidator searchValidator = new SearchValidator();
         ArrayValidator arrayValidator = new ArrayValidator();
 
-        if ((array == null) || (searchValidator.validateSearchData(array, begin, end))
+        if ((array == null) || (!searchValidator.validateSearchData(array, begin, end))
                 || (!arrayValidator.validateArrayElementNotNull(array))) {
             throw new TaskException("incorrect data");
         }
@@ -52,7 +52,7 @@ public class SearchService {
         SearchValidator searchValidator = new SearchValidator();
         ArrayValidator arrayValidator = new ArrayValidator();
 
-        if ((array == null) || (searchValidator.validateSearchData(array, first, last))
+        if ((array == null) || (!searchValidator.validateSearchData(array, first, last))
                 || (!arrayValidator.validateArrayElementNotNull(array))) {
             throw new TaskException("incorrect data");
         }
