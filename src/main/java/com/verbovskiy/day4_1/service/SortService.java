@@ -6,7 +6,7 @@ import com.verbovskiy.day4_1.validator.IndexValidator;
 import com.verbovskiy.day4_1.validator.ArrayValidator;
 
 public class SortService {
-    public boolean ShellSort(IntArray array, boolean isReverse) throws TaskException {
+    public void ShellSort(IntArray array, boolean isReverse) throws TaskException {
         int j;
         ArrayValidator arrayValidator = new ArrayValidator();
 
@@ -30,10 +30,9 @@ public class SortService {
         if (isReverse) {
             reverse(array);
         }
-        return true;
     }
 
-    public boolean selectionSort(IntArray array, boolean isReverse) throws TaskException {
+    public void selectionSort(IntArray array, boolean isReverse) throws TaskException {
         SearchService searchService = new SearchService();
         ArrayValidator arrayValidator = new ArrayValidator();
 
@@ -49,10 +48,9 @@ public class SortService {
         if (isReverse) {
             reverse(array);
         }
-        return true;
     }
 
-    public boolean bubbleSort(IntArray array, boolean isReverse) throws TaskException {
+    public void bubbleSort(IntArray array, boolean isReverse) throws TaskException {
         boolean isSorted;
         ArrayValidator arrayValidator = new ArrayValidator();
 
@@ -75,7 +73,6 @@ public class SortService {
         if (isReverse) {
             reverse(array);
         }
-        return true;
     }
 
     private void reverse(IntArray array) throws TaskException {

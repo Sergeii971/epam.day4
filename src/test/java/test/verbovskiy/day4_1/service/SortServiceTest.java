@@ -131,6 +131,8 @@ public class SortServiceTest {
                     break;
                 }
             }
+        } else {
+            result = false;
         }
         return result;
     }

@@ -231,6 +231,8 @@ public class SearchServiceTest {
                     break;
                 }
             }
+        } else {
+            result = false;
         }
         return result;
     }
